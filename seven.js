@@ -46,23 +46,12 @@ function doubleOS (choice) {
     default:
       break;
   }
-  //updates win tallies when applicable
-  switch (res) {
-    case -2:
-      cWins++;
-      break;
-    case 2:
-      uWins++;
-      break;
-    default:
-      break;
-  }
   //outputs message to let player know what happened
   switch (uAct) {
     case 0:
       if (cAct == 0) {alert("you reload. computer reloads");}
       if (cAct == 1) {alert("you reload. computer activates shield");}
-      if (cAct == 2) {alert("you reload. computer fires! computer wins.");}
+      if (cAct == 2) {alert("you reload. computer fires! computer wins."); cWins++;}
       break;
     case 1:
       if (cAct == 0) {alert("you activate shield. computer reloads");}
@@ -70,7 +59,7 @@ function doubleOS (choice) {
       if (cAct == 2) {alert("you activate shield. computer fires! you shield yourself successfully.");}
       break;
     case 2:
-      if (cAct == 0) {alert("you fire! computer attempts to reload. you win.");}
+      if (cAct == 0) {alert("you fire! computer attempts to reload. you win."); uWins++;}
       if (cAct == 1) {alert("you fire! computer activates shield. computer shields itself successfully.");}
       if (cAct == 2) {alert("you fire! computer fires! nobody wins.");}
       break;
