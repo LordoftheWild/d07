@@ -7,7 +7,7 @@ var victor = "Bond, James";
 var cWins = 0;
 var uWins = 0;
 
-function d07 (choice) {
+function doubleOS (choice) {
   var uAct = choice;
   var cAct = Math.floor(Math.random() * 3);
   var res = uAct - cAct;
@@ -15,6 +15,7 @@ function d07 (choice) {
     uAmmo = 0;
     if (uAct == 2) {
       uAct = 1;
+      cAct = 1;
       alert("you don't have enough ammo for that!");
     }
   }
@@ -56,5 +57,24 @@ function d07 (choice) {
     default:
       break;
   }
-  
+  //outputs message to let player know what happened
+  switch (uAct) {
+    case 0:
+      if (cAct == 0) {alert("you reload. computer reloads");}
+      if (cAct == 1) {alert("you reload. computer activates shield");}
+      if (cAct == 2) {alert("you reload. computer fires! computer wins.");}
+      break;
+    case 1:
+      if (cAct == 0) {alert("you activate shield. computer reloads");}
+      if (cAct == 1) {alert("you activate shield. computer activates shield");}
+      if (cAct == 2) {alert("you activate shield. computer fires! you shield yourself successfully.");}
+      break;
+    case 2:
+      if (cAct == 0) {alert("you fire! computer attempts to reload. you win.");}
+      if (cAct == 1) {alert("you fire! computer activates shield. computer shields itself successfully.");}
+      if (cAct == 2) {alert("you fire! computer fires! nobody wins.");}
+      break;
+    default:
+      break;
+  }
 }
