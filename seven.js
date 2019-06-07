@@ -77,4 +77,6 @@ function doubleOS (choice) {
     default:
       break;
   }
+  document.getElementById("uCount").value = uWins;
+  document.getElementById("cCount").value = cWins;
 }
