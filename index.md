@@ -1,9 +1,8 @@
 <html>
   <head>
-    <script type="text/javascript" src="seven.js"></script>
-    Double-O-Seven
+    <script src="https://github.com/LordoftheWild/d07/blob/master/seven.js"></script>
+    ## Double-O-Seven
   </head>
-  </br>
   <body>
     <button id="reload" onClick="doubleOS(0);">Reload</button>
     <button id="shield" onClick="doubleOS(1);">Shield</button>
