@@ -3,13 +3,14 @@
     <script src="seven.js"></script>
     Double-O-Seven
   </head>
+  <br>
   <body>
     <button id="reload" onClick="doubleOS(0);">Reload</button>
     <button id="shield" onClick="doubleOS(1);">Shield</button>
     <button id="fire" onClick="doubleOS(2);">Fire</button>
-    </br>
+  <br>
     User Wins: <output id="uCount"></output>
-  </br>
+  <br>
     Computer Wins: <output id="cCount"></ouput>
   </body>
 </html>
