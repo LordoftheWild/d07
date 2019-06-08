@@ -9,8 +9,8 @@
     <button id="shield" onClick="doubleOS(1);">Shield</button>
     <button id="fire" onClick="doubleOS(2);">Fire</button>
   <br>
-    User Wins: <output id="uCount">
+    User Wins: <output id="uCount" value="0">.</output>
   <br>
-    Computer Wins: <output id="cCount">
+    Computer Wins: <output id="cCount" value="0">.</output>
   </body>
 </html>
