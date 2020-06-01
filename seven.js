@@ -51,7 +51,7 @@ function doubleOS (choice) {
     case 0:
       if (cAct == 0) {alert("you reload. computer reloads");}
       if (cAct == 1) {alert("you reload. computer activates shield");}
-      if (cAct == 2) {alert("you reload. computer fires! computer wins."); cWins++;}
+      if (cAct == 2) {alert("you reload. computer fires! computer wins."); cWins++; uAmmo = 0; cAmmo = 0;}
       break;
     case 1:
       if (cAct == 0) {alert("you activate shield. computer reloads");}
@@ -59,7 +59,7 @@ function doubleOS (choice) {
       if (cAct == 2) {alert("you activate shield. computer fires! you shield yourself successfully.");}
       break;
     case 2:
-      if (cAct == 0) {alert("you fire! computer attempts to reload. you win."); uWins++;}
+      if (cAct == 0) {alert("you fire! computer attempts to reload. you win."); uWins++; uAmmo = 0; cAmmo = 0;}
       if (cAct == 1) {alert("you fire! computer activates shield. computer shields itself successfully.");}
       if (cAct == 2) {alert("you fire! computer fires! nobody wins.");}
       break;
